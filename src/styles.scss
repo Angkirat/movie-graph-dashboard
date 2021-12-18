@@ -45,14 +45,16 @@ $dark-color-config: mat.get-color-config($movie-graph-dashboard-dark-theme);
 
 .light-mode {
     @include mat.all-component-themes($movie-graph-dashboard-light-theme);
-    $background-color: map.get($light-color-config, 'background');
-    background-color: mat.get-color-from-palette($background-color);
 }
 
 .dark-mode {
     @include mat.all-component-themes($movie-graph-dashboard-dark-theme);
-    $background-color: map.get($dark-color-config, 'background');
-    background-color: mat.get-color-from-palette($background-color);
+    background-color: #333;
+    color: whitesmoke;
+    .tooltipTheme {
+      background-color: whitesmoke;
+      color: #333
+    }
 }
 
 /* You can add global styles to this file, and also import other style files */

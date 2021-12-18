@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <span>Movie Data Analysis</span>
+    <span class="spacer"></span>
+    <button mat-icon-button 
+            aria-label="Switch theme from light to dark mode" 
+            [matTooltip]='themeButtonTooltip' 
+            matTooltipPosition='below'
+            matTooltipClass='tooltipTheme'
+            (click)="toggleTheme()">
+        <mat-icon>{{isDarkMode ? 'dark_mode' : 'light_mode'}}</mat-icon>
+    </button>
+  </mat-toolbar>
+  
