@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PullRawDataService } from '../shared-components/services/pull-raw-data.service';
 
 @Component({
   selector: 'app-main-screen',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private entityData: PullRawDataService) { }
 
   ngOnInit(): void {
   }
